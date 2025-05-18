@@ -1,0 +1,97 @@
+*{
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    height: 100vp;
+ margin: 0px;
+ padding:0px;
+}
+
+.heading{
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    
+    
+}
+.button{
+    /* background-color: #2B2D42; */
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.choice{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: white;
+    /* background-color: #D80032; */
+    /* border-radius: 50%; */
+}
+
+.choice:hover{
+    /* opacity: 0.5 ; */
+    cursor: pointer;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(210, 253, 229);
+}
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif ;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+#userscore ,#computerscore{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.messagecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 10px;
+
+}
+.heart{
+    margin-left: 200px;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 5s;
+    animation-iteration-count: 100;
+    /* animation-delay: 2s; */
+    animation-timing-function: cubic-bezier(1, 0,1, 1);
+    animation-direction: normal;
+    background-color: #EDF2F4;
+}
+/* .hearting{
+    
+} */
+/* @keyframes moveUpward {
+    from{
+        top: ;
+       width: 30px;
+    }
+    to{
+        top: 0px;
+        width: 30px;
+    }
+}     */
+@keyframes rightMovement {
+    from{
+        top: 700px;
+        left: 30px;
+    }
+    to {
+        top: 0px;
+        left: 30px;
+    }
+}
